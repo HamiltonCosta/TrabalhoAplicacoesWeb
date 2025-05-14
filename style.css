@@ -1,25 +1,27 @@
-/* Reset básico */
+/* Reset básico de margem e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Ocupa toda a altura da tela */
 html, body {
     height: 100%;
 }
 
+/* Estilo principal do corpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0d1117;
-    color: #ffffff;
+    background-color: #0d1117; /* Cor de fundo escura */
+    color: #ffffff; /* Texto branco */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     font-size: 16px;
 }
 
-/* Cabeçalho */
+/* Estilo do cabeçalho */
 header {
     background: linear-gradient(to right, #0a0a0a, #004080);
     color: white;
@@ -27,10 +29,12 @@ header {
     text-align: center;
 }
 
+/* Título principal */
 header h1 {
     font-size: 1.8em;
 }
 
+/* Menu de navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -38,33 +42,28 @@ nav ul {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
-    padding: 0;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
+/* Estilo dos links do menu */
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s, border-bottom 0.3s;
     padding: 5px 0;
-    display: inline-block;
 }
 
+/* Efeito ao passar o mouse no menu */
 nav ul li a:hover,
 nav ul li a.active {
     color: #00bfff;
     border-bottom: 2px solid #00bfff;
 }
 
-/* Conteúdo principal */
+/* Estilização da área principal */
 main {
     padding: 40px 20px;
     max-width: 900px;
-    width: 100%;
     margin: 40px auto;
     background-color: #161b22;
     border-radius: 10px;
@@ -86,7 +85,7 @@ footer {
     font-size: 0.9em;
 }
 
-/* Links */
+/* Links gerais */
 a {
     color: #00bfff;
     text-decoration: none;
@@ -96,13 +95,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Links no conteúdo (ex: LinkedIn, GitHub) */
+/* Links no conteúdo principal */
 main a {
     display: inline-block;
     margin: 10px 0;
 }
 
-/* Responsividade */
+/* Responsividade para telas pequenas/mobile */
 @media (max-width: 600px) {
     body {
         font-size: 15px;
@@ -115,11 +114,6 @@ main a {
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-    }
-
-    nav ul li {
-        margin: 0;
     }
 
     main {
