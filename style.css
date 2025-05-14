@@ -101,7 +101,7 @@ main a {
     margin: 10px 0;
 }
 
-/* Responsividade para telas pequenas/mobile */
+/* Responsividade para telas pequenas */
 @media (max-width: 600px) {
     body {
         font-size: 15px;
